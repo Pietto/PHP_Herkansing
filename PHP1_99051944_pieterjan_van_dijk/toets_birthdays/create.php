@@ -56,16 +56,16 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text">Naam</span>
                 </div>
-                <input type="text" class="form-control" placeholder="Naam" name='naam' value='<?php echo $naam; ?>'>
+                <input required type="text" class="form-control" placeholder="Naam" name='naam' value='<?php echo $naam; ?>'>
             </div>
 
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text">Datum</span>
                 </div>
-                <input name='dag' type="number" min="1" max="31" class="form-control" placeholder="Dag" value='<?php echo $dag; ?>'>
-                <input name='maand' type="number" min="1" max="12"  class="form-control" placeholder="Maand" value='<?php echo $maand; ?>'>
-                <input name='jaar' type="number" min="1900" max="2019"  class="form-control" placeholder="Jaar" value='<?php echo $jaar; ?>'>
+                <input name='dag' required type="number" min="1" max="31" class="form-control" placeholder="Dag" value='<?php echo $dag; ?>'>
+                <input name='maand' required type="number" min="1" max="12"  class="form-control" placeholder="Maand" value='<?php echo $maand; ?>'>
+                <input name='jaar' required type="number" min="1900" max="2019"  class="form-control" placeholder="Jaar" value='<?php echo $jaar; ?>'>
             </div>
             
             <button name='submit' type="submit" class="btn btn-primary">Toevoegen</button>
